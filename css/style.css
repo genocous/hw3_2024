@@ -107,7 +107,7 @@ footer{
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-nav.ul.li a:hover, nav.ul.li a:focus{
+nav li:hover, nav li:focus{
   text-decoration: underline;
 }
 
@@ -152,28 +152,25 @@ first div in the grid  and place it in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 
-/* .about .method .clients .contact {grid-column: 2 / span 1;}*/
+
 .about{
   grid-row: 2 / 3;
   grid-column: 1 / 3;
-  z-index: 1;
 }
+
 .method {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
-  z-index: 1;
 }
 
 .clients{
   grid-row: 4 / 5;
   grid-column: 1 / 3;
-  z-index: 1;
 }
 
 .contact{
   grid-row: 5 / 6;
   grid-column: 1 / 3;
-  z-index: 1; /* This is maybe the solution but isn't changing anything */
 }
 
 .about-image .method-image .clients-image .contact-image {
@@ -197,9 +194,6 @@ first div in the grid  and place it in the grid. */
 .contact-image {
   grid-row: 5 / 6;
 }
-
-
-
 
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
@@ -239,17 +233,8 @@ first div in the grid  and place it in the grid. */
     .text-block {
       max-height: 250px;
       overflow: visible;
-
     }
 
 }
 
-/* 
-PROBLEMS TO SOLVE:
-Nav tag location
-Text box location in grid
-steps 11 and 12 grid location
-mobile view vs. desktop view
-why can i not keep the webpage the same in 100% zoom? Shouldn't have to Zoom out
-*/
 
